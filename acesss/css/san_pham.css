@@ -1,0 +1,325 @@
+body {
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+    width: 100%;
+    box-sizing: border-box;
+
+}
+
+.banner {
+    width: 100%;
+    height: 250px;
+    background-image: url('../image/san_pham/0.jpg');
+    margin-bottom: 3rem;
+    background-size: cover;
+}
+
+.container {
+    width: 90%;
+    margin-left: 5%;
+}
+
+/* nav  */
+.nav {
+    display: flex;
+    margin: 4rem 0;
+    justify-content: space-between;
+    background-color: #feeaea;
+    padding: 2rem;
+}
+
+.nav-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-child img {
+    border-radius: 50%;
+    width: 4rem;
+}
+
+
+
+#san_pham {
+    display: flex;
+    position: relative;
+}
+
+.filter {
+    width: 26%;
+    display: flex;
+    flex-direction: column;
+}
+
+.bo_loc_tim_kiem {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.tieu_de {
+    padding: 1rem 0;
+    border-top: 1px solid #cccccc;
+    margin-top: 1.6rem;
+    font-weight: 600;
+}
+
+.danh_muc,
+.cac_thuong_hieu div,
+.gia
+ {
+    margin-bottom: 0.5rem;
+}
+
+.cac_thuong_hieu {
+    display: flex;
+    flex-direction: column;
+}
+
+.cac_mau_sac span{
+    padding: 0.4rem 1rem;
+    margin-right: 0.5rem;
+}
+
+.cac_kich_thuoc span {
+    border: 1px solid #a4a0a0;
+    padding: 0.4rem 1rem;
+    margin-right: 0.4rem;
+}
+
+input:hover {
+    cursor: pointer;
+}
+
+
+/* cac san pham  */
+.cac_san_pham {
+    width: 74%;
+}
+
+.phan_dau {
+    display: flex;
+    justify-content: space-between;
+}
+
+.phan_dau span {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.right {
+    width: 12rem;
+    padding: 0.2rem;
+    font-size: 1.1rem;
+    border: none;
+    border-bottom: 1px solid #cccccc;
+}
+
+/* sanr pham  */
+
+.phan_sau {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.san_pham {
+    width: 24%;
+
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-left: 1%;
+    margin-bottom: 1rem;
+}
+
+.san_pham img {
+    width: 100%;
+    height: 16rem;
+}
+
+.san_pham img:hover {
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.ten_sp {
+    font-size: 1.1rem;
+    margin: 0.4rem 0;
+    text-decoration: none;
+    color: #252a2b;
+}
+
+.ten_sp:hover {
+    cursor: pointer;
+}
+
+.gia {
+    font-size: 1rem;
+}
+
+.gia_goc {
+    text-decoration: line-through;
+    font-size: 0.9rem;
+    color: #252a2b;
+}
+
+
+.sales {
+    position: absolute;
+    border: 1px solid #ededed;
+    padding: 0.1rem 0.6rem;
+    top: 1.4rem;
+    color: red;
+}
+
+.het_hang {
+    position: absolute;
+    right: 0;
+    border: 1px solid #ededed;
+    padding: 0.1rem 0.4rem;
+    top: 11rem;
+    opacity: 66%;
+}
+
+.red {
+    color: red;
+}
+
+
+button {
+    margin: 2rem auto;
+    padding: 0.8rem 1.2rem;
+    font-size: 1.3rem;
+    color: white;
+    background-color: #ebbfbf;
+    border: none;
+    border-radius: 2rem;
+    font-weight: 600;
+}
+
+button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.bo_loc_res {
+    font-size: 2rem;
+    margin: 1rem 0;
+    display: none;
+}
+
+.bo_loc_res:hover {
+    cursor: pointer;
+}
+
+.hien {
+    display: flex !important;
+}
+
+/* 4 anh  */
+.anh_4 {
+    background-color: #feeaea;
+    display: flex;
+    margin-top: 4rem;
+    padding: 4rem 0;
+}
+
+.trai {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: flex-end;
+
+}
+
+.phai {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.trai img {
+    width: 80%;
+    height: auto;
+    margin-right: 3%;
+    margin-top: 3%;
+}
+
+.phai img {
+    width: 80%;
+    height: auto;
+    margin-right: 3%;
+    margin-bottom: 3%;
+}
+
+@media only screen and (max-width: 600px) {
+    html {
+        font-size: 12px;
+    }
+
+    .filter {
+        display: none;
+        position: absolute;
+        z-index: 100;
+        background-color: white;
+        width: 70%;
+        padding: 2rem;
+    }
+
+    .bo_loc_tim_kiem {
+        display: none;
+    }
+
+    .bo_loc_res {
+        display: block;
+    }
+
+    .cac_san_pham {
+        width: 100%;
+    }
+    
+    .san_pham {
+        width: 49%;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+    }
+
+    .nav-child {
+        width: 30%;
+        margin-bottom: 1rem;
+    }
+
+    .anh_4 {
+        flex-direction: column;
+    }
+
+    .trai {
+        width: 100%;
+    }
+
+    .phai {
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1100px) {
+    html {
+        font-size: 13px;
+    }
+    .san_pham {
+        width: 32%;
+    }
+    .cac_san_pham {
+        margin-left: 3%;
+    }
+}
+
+
+
+
+
