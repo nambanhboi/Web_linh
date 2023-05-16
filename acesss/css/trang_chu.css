@@ -1,0 +1,406 @@
+/* banner */
+.banner1_home {
+    width: 100%;
+
+}
+
+.banner1_home img {
+    width: 100%;
+}
+
+.banner_chinh {
+    cursor: pointer;
+}
+
+.danh_sach_banner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner_con {
+    height: auto !important;
+    width: 33%;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner_con img:hover {
+    scale: 110%;
+    transition: 1.5s;
+}
+
+.caption_banner {
+    position: absolute;
+    bottom: 3px;
+    background-color: rgba(0, 0, 0, 0.351);
+    width: 100%;
+    padding: 15px 20px;
+    color: aliceblue;
+    font-size: 1.1rem;
+}
+
+.caption_banner p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.caption_banner button {
+    position: relative;
+    border: 1px solid #ffffff;
+    padding: 5px 15px;
+    color: #252a2b;
+    text-align: center;
+    display: inline-block;
+}
+
+.caption_banner button:hover {
+    background-color: transparent;
+    color: aliceblue;
+    cursor: pointer;
+}
+.banner_con:hover{
+    cursor: pointer;
+}
+
+/* sản phẩm mới */
+.san_pham_moi h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #252a2b;
+    padding: 3rem 0;
+    margin: 0;
+}
+
+.san_pham_moi h2 span {
+    cursor: pointer;
+}
+
+.san_pham_moi h2 span:hover {
+    color: rgb(251, 154, 170);
+}
+
+.san_pham_moi1 {
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sp-san_pham_moi1 {
+    width: 19.5%;
+    cursor: pointer;
+}
+
+.img_sp_moi {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.img_sp_moi img {
+    width: 100%;
+}
+
+.caption_sp_moi {
+    padding: 0 1rem;
+}
+
+.sp-san_pham_moi1:hover {
+    box-shadow: 1px 1px 15px #c3c3c3;
+    color: rgb(251, 154, 170);
+}
+
+.san_pham_moi2 {
+    width: 100%;
+    height: 25rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    overflow: hidden;
+}
+
+.sp-sp_moi2 {
+    width: 33%;
+    position: relative;
+    height: 100%;
+}
+
+.img-san_pham_moi2 {
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+
+}
+
+.caption_sp_moi2 {
+    position: relative;
+    width: 100%;
+    top: 14rem;
+    padding-left: 2rem;
+    color: white;
+    /* line-height: 1rem; */
+}
+
+.caption_sp_moi2 button {
+    border: 1px solid transparent;
+    padding: 10px 28px;
+}
+
+.caption_sp_moi2 h3 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.caption_sp_moi2 p {
+    margin: 0;
+    padding: 0;
+}
+
+.caption_sp_moi2 button:hover {
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    padding: 10px 28px;
+}
+
+.img-san_pham_moi2 img:hover {
+    scale: 110%;
+    transition: 1.5s;
+}
+
+/* sản phẩm bán chạy */
+.san_pham_ban_chay{
+    width: 90%;
+    margin-left: 5%;
+}
+.san_pham_ban_chay h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: rgb(37, 42, 43);
+    padding: 3rem 0px;
+    margin: 0px;
+}
+
+.san_pham_ban_chay h2 span:hover{
+    color: rgb(251, 154, 170);
+    cursor: pointer;
+}
+.list_spbc{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.spbc{
+    width: 19.5%;
+    min-width:255px ;
+    margin-top: 5px;
+}
+.spbc img{
+    width: 100%;
+}
+.img_spbc{
+    overflow: hidden;
+}
+.caption_spbc{
+    padding: 0 1rem;
+}
+
+.spbc:hover{
+    box-shadow: 1px 1px 15px #c3c3c3;
+    color: rgb(251, 154, 170);
+}
+
+/* giới thiệu */
+.gioi_thieu_home{
+    width: 100%;
+    margin-top: 3rem;
+    background-color: #e9e9e9;
+}
+.gioi_thieu_home1{
+    display: flex;
+}
+.gioi_thieu_trai{
+    width: 50%;
+}
+.gioi_thieu_phai{
+    position: relative;
+    width: 50%;
+}
+.caption_gioi_thieu{
+    position: absolute;
+    z-index: 1;
+    color: #ffffff;
+    margin-top: 9rem;
+    margin-left: 3rem;
+}
+.caption_gioi_thieu h2{
+    font-size: 3.2rem;
+}
+.caption_gioi_thieu button{
+    padding: 10px 28px;
+    border: none;
+}
+.caption_gioi_thieu button:hover{
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+}
+.img_gioi_thieu{
+    width: 100%;
+    height: 33rem;
+    overflow: hidden;
+}
+.img_gioi_thieu img{
+    filter: brightness(0.6);
+    width: 100%;
+}
+.gioi_thieu_phai{
+    display: grid;
+    align-content: center;
+    line-height: 1.3rem;
+}
+.gioi_thieu_phai li{
+    list-style: none;
+}
+
+.input_home{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input_home form{
+    /* width: 100%; */
+    padding: 2rem 0;
+}
+input[type=text]{
+    width: 30rem;
+    height: 2.3rem;
+    padding-left: 0.5rem;
+    /* border-radius: 0.5rem; */
+}
+.input_home button{
+    height: 2.6rem;
+    padding: 0rem 1rem;
+    cursor: pointer;
+}
+.input_home label{
+    font-size: 1.4rem;
+    margin-top: 15px;
+}
+.fa-phone{
+    font-size: 1.4rem;
+    margin-left: 2rem;
+    margin-right: 0.3rem;
+}
+.phone_about{
+    display: flex;
+    align-items: center;
+}
+
+/* responsive */
+@media (min-width: 740px) and (max-width: 1023px){
+    /* sản phẩm mới */
+    .san_pham_moi2 {
+        height: 98rem;
+        flex-direction: column;
+    }
+    .sp-sp_moi2{
+        width: 100%;
+        /* text-align: center; */
+    }
+    .caption_sp_moi2{
+        font-size: 2rem;
+    }
+    .img-san_pham_moi2 img{
+        width: 100%;
+    }
+
+    .gioi_thieu_home1{
+        flex-direction: column;
+    }
+    .gioi_thieu_trai{
+        width: 100%;
+    }
+    .gioi_thieu_phai{
+        margin-top: 1rem;
+        width: 100%;
+    }
+    .input_home{
+        flex-direction: column;
+    }
+    input[type=text]{
+        width: 25rem;
+        /* border-radius: 0.5rem; */
+    }
+}
+
+
+@media (max-width: 740px) {
+    .danh_sach_banner{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .banner_con{
+        width: 100%;
+    }
+    /* sản phẩm mới */
+    .san_pham_moi1{
+        flex-wrap: wrap;
+    }
+    .sp-san_pham_moi1{
+        min-width: 140px;
+    }
+    .san_pham_moi2 {
+        height: 65rem;
+        flex-direction: column;
+    }
+    .caption_sp_moi2{
+        top: 6rem;
+    }
+    .sp-sp_moi2{
+        width: 100%;
+        /* text-align: center; */
+    }
+    .caption_sp_moi2{
+        font-size: 2rem;
+    }
+    .img-san_pham_moi2 img{
+        width: 100%;
+    }
+
+    .gioi_thieu_home1{
+        flex-direction: column;
+    }
+    .gioi_thieu_trai{
+        width: 100%;
+    }
+    .img_gioi_thieu{
+        height: 28rem;
+    }
+    .caption_gioi_thieu h2{
+        font-size: 2.1rem;
+        text-align: center;
+    }
+    .gioi_thieu_phai{
+        /* margin-top: 1rem; */
+        width: 100%;
+    }
+    .input_home{
+        flex-direction: column;
+    }
+
+    input[type=text]{
+        width: 60%;
+        margin-top: 5px;
+        /* border-radius: 0.5rem; */
+    }
+    .input_home button{
+        padding: 0rem 3rem;
+    }
+    .input_home form{
+        display: contents;
+    }
+}
