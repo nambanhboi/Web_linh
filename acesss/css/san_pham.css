@@ -174,7 +174,7 @@ input:hover {
 }
 
 
-button {
+.btnthem {
     margin: 2rem auto;
     padding: 0.8rem 1.2rem;
     font-size: 1.3rem;
@@ -185,7 +185,7 @@ button {
     font-weight: 600;
 }
 
-button:hover {
+.btnthem:hover {
     opacity: 0.8;
     cursor: pointer;
 }

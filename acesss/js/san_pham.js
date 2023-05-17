@@ -1,5 +1,5 @@
 //lấy ra thẻ button thêm sự kiện click hiển thị tất cả các sản phẩm còn lại
-document.querySelector('button').addEventListener('click', function() {
+document.querySelector('.btnthem').addEventListener('click', function() {
     //lấy ra các sản phẩm có class them và xóa từng thuộc tính style của các sản phẩm bị ẩn
     document.querySelectorAll('.them').forEach(function(sanpham) {
         sanpham.removeAttribute('style');
