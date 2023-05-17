@@ -301,7 +301,7 @@ input[type=text]{
 }
 
 /* responsive */
-@media (min-width: 740px) and (max-width: 1023px){
+@media (min-width: 741px) and (max-width: 1023px){
     /* sản phẩm mới */
     .san_pham_moi2 {
         height: 98rem;

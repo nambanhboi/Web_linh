@@ -22,7 +22,8 @@ html,body{
 }
 
 .tieu_de_footer {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
+    font-weight: 600;
 }
 
 .chi_tiet_gt,
@@ -98,7 +99,6 @@ html,body{
     }
 
     .tieu_de_footer {
-        font-size: 2.4rem;
         display: flex;
         justify-content: space-between;
         margin-bottom: 1rem;
@@ -111,5 +111,22 @@ html,body{
      
     .icon-show {
         display: block !important;
+    }
+}
+
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+    #footer {
+        flex-wrap: wrap;
+    }
+
+    .gioi_thieu,
+    .thong_tin_lien_he,
+    .ho_tro,
+    .lien_ket {
+        width: 48%;
+    }
+
+    .gioi_thieu p {
+        margin: 0;
     }
 }
