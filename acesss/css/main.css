@@ -5,3 +5,111 @@ html,body{
     box-sizing: border-box;
     margin: 0;
 }
+
+.container {
+    width: 90%;
+    margin-left: 5%;
+}
+
+/* footer  */
+#footer {
+    display: flex;
+    padding: 4rem 0;
+}
+
+.thong_tin_khac {
+    display: none;
+}
+
+.tieu_de_footer {
+    font-size: 1.2rem;
+}
+
+.chi_tiet_gt,
+.chi_tiet_ttlh,
+.chi_tiet_ht,
+.chi_tiet_lk {
+    margin-top: 1.6rem;
+    margin-right: 1rem;
+}
+
+.chi_tiet_gt {
+    max-width: 49rem;
+}
+
+.chi_tiet_gt i {
+    font-size: 1.1rem;
+    border: 1px solid #ededed;
+    padding: 0.4rem;
+    margin-right: 0.2rem;
+    border-radius: 0.2rem;
+}
+
+.chi_tiet_gt i:hover {
+    cursor: pointer;
+    color: #ebbfbf;
+    border: 1px solid #ebbfbf;
+}
+
+.chi_tiet_ttlh div {
+    margin-bottom: 1rem;
+}
+
+.chi_tiet_gt,
+.chi_tiet_ttlh,
+.chi_tiet_ht, 
+.chi_tiet_lk {
+    display: flex;
+    flex-direction: column;
+}
+
+.chi_tiet_ht a, 
+.chi_tiet_lk a {
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: black;
+    min-width: 12rem;
+}
+
+.icon-show {
+    display: none !important;
+}
+
+.show {
+    display: flex !important;
+}
+
+@media only screen and (max-width: 740px) {
+    .chi_tiet_gt,
+    .chi_tiet_ttlh,
+    .chi_tiet_ht,
+    .chi_tiet_lk {
+        display: none;
+    }
+
+    #footer {
+        flex-direction: column;
+    }
+
+    .thong_tin_khac {
+        display: block;
+        font-size: 3rem;
+        margin: 2rem auto;
+    }
+
+    .tieu_de_footer {
+        font-size: 2.4rem;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+    }
+
+    .tieu_de_footer:hover {
+        cursor: pointer;
+        background-color: #faefef;
+    }
+     
+    .icon-show {
+        display: block !important;
+    }
+}

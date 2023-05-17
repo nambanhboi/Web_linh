@@ -1,22 +1,9 @@
-body {
-    margin: 0;
-    font-family: 'Quicksand', sans-serif;
-    width: 100%;
-    box-sizing: border-box;
-
-}
-
 .banner {
     width: 100%;
     height: 250px;
     background-image: url('../image/san_pham/0.jpg');
     margin-bottom: 3rem;
     background-size: cover;
-}
-
-.container {
-    width: 90%;
-    margin-left: 5%;
 }
 
 /* nav  */
