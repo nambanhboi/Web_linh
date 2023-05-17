@@ -288,11 +288,79 @@ a{
 /* <!-- end: tiêu đề -->  */
 
  /* <!-- start: chân trang --> */
+
+    #footer {
+        display: flex;
+        padding: 4rem 0;
+    }
+
+    .thong_tin_khac {
+        display: none;
+    }
+
+    .tieu_de_footer {
+        font-size: 1.6rem;
+        font-weight: 600;
+    }
+
+    .chi_tiet_gt,
+    .chi_tiet_ttlh,
+    .chi_tiet_ht,
+    .chi_tiet_lk {
+        margin-top: 1.6rem;
+        margin-right: 1rem;
+    }
+
+    .chi_tiet_gt {
+        max-width: 49rem;
+    }
+
+    .chi_tiet_gt i {
+        font-size: 1.1rem;
+        border: 1px solid #ededed;
+        padding: 0.4rem;
+        margin-right: 0.2rem;
+        border-radius: 0.2rem;
+    }
+
+    .chi_tiet_gt i:hover {
+        cursor: pointer;
+        color: #ebbfbf;
+        border: 1px solid #ebbfbf;
+    }
+
+    .chi_tiet_ttlh div {
+        margin-bottom: 1rem;
+    }
+
+    .chi_tiet_gt,
+    .chi_tiet_ttlh,
+    .chi_tiet_ht, 
+    .chi_tiet_lk {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .chi_tiet_ht a, 
+    .chi_tiet_lk a {
+        margin-bottom: 1rem;
+        text-decoration: none;
+        color: black;
+        min-width: 12rem;
+    }
+
+    .icon-show {
+        display: none !important;
+    }
+
+    .show {
+        display: flex !important;
+    }
 /* <!-- end: chân trang --> */
 
 /* start: responsive */
 /* ipad */
-    @media (min-width: 740px) and (max-width: 1023px){
+@media (min-width: 740px) and (max-width: 1023px){
     /* <!-- start: tiêu đề --> */
         #tieu_de .tieu_de_chinh {
             margin: 0 20px;
@@ -338,100 +406,144 @@ a{
     /* <!-- end: tiêu đề -->  */
 
     /* <!-- start: chân trang --> */
+        #footer {
+            flex-wrap: wrap;
+        }
+
+        .gioi_thieu,
+        .thong_tin_lien_he,
+        .ho_tro,
+        .lien_ket {
+            width: 48%;
+        }
+
+        .gioi_thieu p {
+            margin: 0;
+        }
     /* <!-- end: chân trang --> */
-    }
+}
 
 /* mobile */
 @media (max-width: 740px){
 /* <!-- start: tiêu đề --> */
-#tieu_de .tieu_de_chinh {
-    margin: 0 20px;
-}
+    #tieu_de .tieu_de_chinh {
+        margin: 0 20px;
+    }
 
-#tieu_de .tieu_de_chinh .tieu_de_tren {
-    display: block;
-    text-align: center;
-}
+    #tieu_de .tieu_de_chinh .tieu_de_tren {
+        display: block;
+        text-align: center;
+    }
 
-.tieu_de_chinh .tieu_de_tren .tdt_search {
-    text-align: left;
-    margin-top: 20px;
-}
+    .tieu_de_chinh .tieu_de_tren .tdt_search {
+        text-align: left;
+        margin-top: 20px;
+    }
 
-.tieu_de_tren .tdt_search input{
-    width: 270px;
-}
+    .tieu_de_tren .tdt_search input{
+        width: 270px;
+    }
 
-.tieu_de_tren .tdt_lua_chon .fa-bars{
-    display: block;
-}
+    .tieu_de_tren .tdt_lua_chon .fa-bars{
+        display: block;
+    }
 
-.tieu_de_chinh .tieu_de_tren .tdt_lua_chon {
-    padding-top: 20px
-}
+    .tieu_de_chinh .tieu_de_tren .tdt_lua_chon {
+        padding-top: 20px
+    }
 
-.tieu_de_tren .tdt_lua_chon .fa-bars{
-    font-size: 25px;
-    font-size: 25px;
-    border: 1px solid rgb(238 45 122);
-    padding: 4px 5px;
-    color:rgb(238 45 122) ;
-}
+    .tieu_de_tren .tdt_lua_chon .fa-bars{
+        font-size: 25px;
+        font-size: 25px;
+        border: 1px solid rgb(238 45 122);
+        padding: 4px 5px;
+        color:rgb(238 45 122) ;
+    }
 
-.tdt_lua_chon .tdt_tai_khoan .tdt_tkct{
-    display: none;
-}
+    .tdt_lua_chon .tdt_tai_khoan .tdt_tkct{
+        display: none;
+    }
 
-.tieu_de_tren .tdt_lua_chon .tdt_tai_khoan{
-    margin-left: 200px;
-    padding-right: 0;
-}
+    .tieu_de_tren .tdt_lua_chon .tdt_tai_khoan{
+        margin-left: 200px;
+        padding-right: 0;
+    }
 
-#tieu_de .tieu_de_chinh .tieu_de_duoi {
-    display: none;
-}
+    #tieu_de .tieu_de_chinh .tieu_de_duoi {
+        display: none;
+    }
 
-#tieu_de .tieu_de_duoi_mobile{
-    display: none;
-}
+    #tieu_de .tieu_de_duoi_mobile{
+        display: none;
+    }
 
-.tieu_de_duoi_mobile li{
-    padding: 10px 0;
-}
+    .tieu_de_duoi_mobile li{
+        padding: 10px 0;
+    }
 
-.tieu_de_duoi_mobile li a{
-    color: #000;
-    margin: 10px 0 10px 10px;
-}
+    .tieu_de_duoi_mobile li a{
+        color: #000;
+        margin: 10px 0 10px 10px;
+    }
 
-.tieu_de_duoi_mobile hr{
-    background-color: #c4c4c4;
-    border: none;
-    height: 0.5px
-}
+    .tieu_de_duoi_mobile hr{
+        background-color: #c4c4c4;
+        border: none;
+        height: 0.5px
+    }
 
 
-#tieu_de .tieu_de_chinh .dang_nhap {
-    top: 180px;
-    right: 20px;
-    background-color: #fff;
-}
+    #tieu_de .tieu_de_chinh .dang_nhap {
+        top: 180px;
+        right: 20px;
+        background-color: #fff;
+    }
 
-#tieu_de .tieu_de_chinh .dang_ky {
-    top: 180px;
-    right: 20px;
-    background-color: #fff;
-}
+    #tieu_de .tieu_de_chinh .dang_ky {
+        top: 180px;
+        right: 20px;
+        background-color: #fff;
+    }
 
-#tieu_de .tieu_de_chinh .danh_muc_tk{
-    right: 70px;
-    top: 170px;
-    background-color: #fff;
-}
-
+    #tieu_de .tieu_de_chinh .danh_muc_tk{
+        right: 70px;
+        top: 170px;
+        background-color: #fff;
+    }
 /* <!-- end: tiêu đề -->  */
 
- /* <!-- start: chân trang --> */
-/* <!-- end: chân trang --> */
+/* <!-- start: chân trang -->  */
+    .chi_tiet_gt,
+    .chi_tiet_ttlh,
+    .chi_tiet_ht,
+    .chi_tiet_lk {
+        display: none;
+    }
+
+    #footer {
+        flex-direction: column;
+    }
+
+    .thong_tin_khac {
+        display: block;
+        font-size: 3rem;
+        margin: 2rem auto;
+    }
+
+    .tieu_de_footer {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+    }
+
+    .tieu_de_footer:hover {
+        cursor: pointer;
+        background-color: #faefef;
+    }
+    
+    .icon-show {
+        display: block !important;
+    }
+/* <!-- end: chân trang -->  */
 }
-/* end: responsive */
+
